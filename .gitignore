@@ -1,0 +1,36 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+config.local.*
+
+# Runtime files
+*.log
+*.pid
+
+# Backups and recovery
+*.backup
+*.bak
+*.stable.py
+recovery/
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local cache
+.cache/

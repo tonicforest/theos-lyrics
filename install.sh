@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -e
+sudo apt update
+sudo apt install -y python3-gi python3-dbus gir1.2-gtk-3.0 python3-requests
+PROJECT="$(cd "$(dirname "$0")" && pwd)"
+mkdir -p "$HOME/.local/bin" "$HOME/.local/share/applications"
+cat > "$HOME/.local/bin/theos-lyrics" <<EOF
+#!/usr/bin/env bash
+exec /usr/bin/python3 "$PROJECT/main.py"
+EOF
+chmod +x "$HOME/.local/bin/theos-lyrics"
+cat > "$HOME/.local/share/applications/theos-lyrics.desktop" <<EOF
+[Desktop Entry]
+Name=Theòs Lyrics
+Comment=Synced lyrics overlay for MPRIS players
+Exec=$HOME/.local/bin/theos-lyrics
+Icon=audio-x-generic
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;
+EOF
+echo "Installed. Launch Theòs Lyrics from the app menu."
