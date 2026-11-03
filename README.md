@@ -6,6 +6,24 @@ A lightweight, cinematic lyrics overlay for Linux. Theòs Lyrics follows your mu
   <strong>GTK3 · Python · MPRIS · LRCLIB</strong>
 </p>
 
+## 📸 Screenshots
+
+<p align="center">  
+<img src="assets/Screenshot1.png" alt="Theòs Lyrics displaying synchronized lyrics over a desktop wallpaper" width="100%">  
+</p>
+
+<p align="center">  
+<em>Theòs Lyrics — cinematic floating lyrics overlay.</em>  
+</p>
+
+<p align="center">  
+<img src="assets/Screenshot2.png" alt="Theòs Lyrics displaying another synchronized lyric" width="100%">  
+</p>
+
+<p align="center">  
+<em>Another moment in the karaoke experience.</em>  
+</p>
+
 ## ✨ Features
 
 - **Synchronized lyrics** — retrieves timestamped lyrics from [LRCLIB](https://lrclib.net/).
