@@ -52,7 +52,10 @@ def main():
         overlay,
         dispatch=dispatch,
     )
-
+    # Connect Windows media events to the overlay.
+    watcher.set_overlay_track_callback(overlay.set_track)
+    watcher.set_overlay_lyrics_callback(overlay.set_lyrics)
+    watcher.set_overlay_position_callback(overlay.set_position)
     outside_monitor = OutsideClickMonitor(
         root,
         overlay.window,
